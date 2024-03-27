@@ -13,7 +13,7 @@ public class DatabaseConnection {
      public Connection getCConnection() throws SQLException{
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/ticketingsystem", "root", "Gwapoko123");
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/ticketingsystem", "root", "root");
         } catch (ClassNotFoundException | SQLException e) {
             java.util.logging.Logger.getLogger(DatabaseConnection.class.getName()).log(java.util.logging.Level.SEVERE, null, e);
 

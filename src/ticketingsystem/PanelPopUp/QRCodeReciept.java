@@ -70,6 +70,8 @@ public class QRCodeReciept extends javax.swing.JPanel {
         TI.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         TI.setText("Ticket ID*");
 
+        qrImage.setImage(new javax.swing.ImageIcon(getClass().getResource("/ticketingsystem/Image/qrCode.jpg"))); // NOI18N
+
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ticketingsystem/Image/icons8_add_30px.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

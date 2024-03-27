@@ -77,11 +77,46 @@ private void blueDay(){
 } 
 private void bunoMers(){
     concertData.setText("Buno Mers");
-    Schedule.setText("26/03/2024 07:00:00");
+    Schedule.setText("27/03/2024 07:00:00");
     price.setText("79.79");
     tickerID.setText(generateUserId());
 } 
-    
+ private void SailorSwift(){
+    concertData.setText("Sailor Swift");
+    Schedule.setText("28/03/2024 09:00:00");
+    price.setText("100.00");
+    tickerID.setText(generateUserId());
+ }
+ private void BanJavi(){
+    concertData.setText("banJavi");
+    Schedule.setText("29/03/2024 09:00:00");
+    price.setText("200.00");
+    tickerID.setText(generateUserId());
+ }  
+ private void FairSupply(){
+    concertData.setText("Fair Supply");
+    Schedule.setText("30/03/2024 10:00:00");
+    price.setText("300.00");
+    tickerID.setText(generateUserId());
+ }
+ private void LakeMaya(){
+    concertData.setText("Lake Maya");
+    Schedule.setText("31/03/2024 11:00:00");
+    price.setText("400.00");
+    tickerID.setText(generateUserId());
+ }
+ private void ParokyaniAdam(){
+    concertData.setText("Parokya ni Adam");
+    Schedule.setText("01/04/2024 12:00:00");
+    price.setText("500.00");
+    tickerID.setText(generateUserId());
+ }
+ private void EmmaTour(){
+    concertData.setText("Emma Tour");
+    Schedule.setText("02/04/2024 01:00:00");
+    price.setText("600.00");
+    tickerID.setText(generateUserId());
+ }  
  public static String generateUserId() {
     int userIdLength = 6;
 
@@ -146,18 +181,43 @@ private void bunoMers(){
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton3.setText("Sailor Swift");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton4.setText("Ban Javi");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton5.setText("Fair Supply");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton6.setText("Lake Maya");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton7.setText("Parokya ni Adam");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         cbbSeats.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         cbbSeats.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "VIP", "Lower Back", "Upper Back", "General Admission" }));
@@ -225,6 +285,11 @@ private void bunoMers(){
 
         jButton11.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jButton11.setText("Emma Tour");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
 
         mani1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -377,6 +442,30 @@ private void bunoMers(){
             evt.consume();
         }
     }//GEN-LAST:event_mani1KeyTyped
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        SailorSwift();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        BanJavi();
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+       FairSupply();
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+       LakeMaya();
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        ParokyaniAdam();
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+      EmmaTour();
+    }//GEN-LAST:event_jButton11ActionPerformed
 
  
     public static void main(String args[]) {
